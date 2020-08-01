@@ -1,4 +1,4 @@
-import react , {useState} from 'react';
+import React , {useState} from 'react';
 import { 
     StyleSheet, 
     Text, 
@@ -13,22 +13,22 @@ export default function AddTodo({submitHandler}) {
         setText(val);
     }
     return(
-        <view>
+        <View>
             <TextInput 
             placeholder = 'new todo...' 
             onChangeText = {changeHandler}
             style = {styles.input} / >
-            <Button onPress={() => submitHandler(text)} title='add todo' color='coral' />
-        </view>
+            <Button onPress={() => submitHandler(Text)} title='add todo' color='coral' />
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     input :{
-        marginBotton:10,
+        marginBottom:10,
         paddingHorizontal:8,
         paddingVertical:6,
-        borderBottomWidth:1,
-        botderBottomColor:'#ddd'
+        borderBottomWidth:3,
+        borderBottomColor:'#ddd'
     }
 })

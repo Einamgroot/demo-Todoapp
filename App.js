@@ -4,12 +4,11 @@ import {
         StyleSheet, 
         Text, 
         View,
-        FlatList,
-        ToolbarAndroid
+        FlatList
 } from 'react-native';
-import {Header} from "./component/header";
-import {TodoItem} from "./component/todoItem";
-import {AddTodo} from "./component/addtodo";
+import Header from "./component/header";
+import TodoItem from "./component/todoitem";
+import AddTodo from "./component/addtodo";
 
 export default function App() {
   const [todos, setTodos ] = useState ([
@@ -41,7 +40,7 @@ export default function App() {
           <FlatList
             data={todos}    
             renderItem={({item}) => (
-            <Todoitem item={item} pressHandler={pressHandler}/>
+            <TodoItem item={item} pressHandler={pressHandler}/>
           )}
           />
         </View> 
@@ -53,7 +52,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ade498',
     alignItems: 'center',
     justifyContent: 'center',
   },
