@@ -35,9 +35,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Head />
-      <View style={styles.constent}>
-        {/*to form*/}
-        <View style={style.list}>
+      <View style={styles.content}>
+        <AddTodo submitHandler = {submitHandler}/>
+        <View style={styles.list}>
           <FlatList
             data={todos}    
             renderItem={({item}) => (

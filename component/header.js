@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { 
     StyleSheet, 
     Text, 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         backgroundColor : 'coral'
     },
     title : {
-        textalign : 'center',
+        textAlign : 'center',
         color : '#fff',
         fontSize : 20,
         fontWeight : 'bold',
